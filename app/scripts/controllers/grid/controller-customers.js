@@ -10,6 +10,12 @@ app.controller('GridCustomersController', function ($scope, $http) {
 
   $scope.gridCustomers = {
     data: 'customers',
+    columnDefs: [{field: 'id'},
+                 {field: 'name'},
+                 {field: 'email'},
+                 {field: 'city'},
+                 {field: 'note', cellTemplate: '<input class="form-control input-sm" type="text" ng-input="COL_FIELD" ng-model="row.entity.note" />'}
+    ],
     enableColumnResize: true,
     enableColumnReordering: true,
     multiSelect: false,
