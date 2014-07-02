@@ -412,6 +412,14 @@ module.exports = function (grunt) {
       test: {
         NODE_ENV: 'test'
       }
+    },
+
+    protractor: {
+      options: {
+        keepAlive: true,
+        configFile: "protractor.conf.js"
+      },
+      run: {}
     }
   });
 
@@ -461,6 +469,9 @@ module.exports = function (grunt) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run(['serve']);
   });
+
+  // Used to run End to End tests.
+  grunt.registerTask('e2e', ['protractor']);
 
   grunt.registerTask('test', function(target) {
     if (target === 'server') {
