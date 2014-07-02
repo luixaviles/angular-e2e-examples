@@ -1,11 +1,11 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: GridControllerBrowserCtrl', function () {
 
   // load the controller's module
   beforeEach(module('angularE2EExamples'));
 
-  var MainCtrl,
+  var GridControllerBrowserCtrl,
     scope,
     $httpBackend;
 
@@ -15,7 +15,7 @@ describe('Controller: MainCtrl', function () {
     $httpBackend.expectGET('/api/awesomeThings')
       .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    GridControllerBrowserCtrl = $controller('GridControllerBrowserCtrl', {
       $scope: scope
     });
   }));

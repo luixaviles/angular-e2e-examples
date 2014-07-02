@@ -1,0 +1,24 @@
+<div ng-include="'partials/navbar'"></div>
+<div ng-controller="GridCustomersController">
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-8"><h3>Customers</h3></div>
+  </div>
+    <div class="container-fluid">
+      <form name="browserForm" role="form" class="form-horizontal">
+          <div class="form-group">
+            <div class="row-fluid">
+              <div class="gridStyle" ng-grid="gridCustomers" style="height: 200px">
+              </div>
+            </div>
+          </div>
+          <div class="form-group text-right">
+            <button type="submit" class="btn btn-primary btn-lg" ng-click="cancel()">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-lg" ng-click="submit()">Submit</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>luixaviles</p>
+</div>
