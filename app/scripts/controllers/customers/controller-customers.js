@@ -10,11 +10,12 @@ app.controller('GridCustomersController', function ($scope, $http) {
 
   $scope.gridCustomers = {
     data: 'customers',
-    columnDefs: [{field: 'id', displayName: 'Id'},
+    columnDefs: [{field: 'id', displayName: 'Id', width: 30},
                  {field: 'name', displayName: 'Name'},
                  {field: 'email', displayName: 'Email'},
                  {field: 'city', displayName: 'City'},
-                 {field: 'comment', displayName: 'Comment', cellTemplate: '<input class="form-control input-sm" type="text" ng-input="COL_FIELD" ng-model="row.entity.comment" />'}
+                 {field: 'comment', displayName: 'Comment',
+                  cellTemplate: '<input class="form-control input-sm" type="text" ng-input="COL_FIELD" ng-model="row.entity.comment" />'}
     ],
     enableCellSelection: true,
     enableRowSelection: false,
@@ -24,6 +25,4 @@ app.controller('GridCustomersController', function ($scope, $http) {
     multiSelect: false,
     width: 'auto'
   };
-
-
 });
