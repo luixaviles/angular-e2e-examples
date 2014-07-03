@@ -19,3 +19,22 @@ Install grunt with.
 Install protractor with.
 
     npm install -g protractor
+
+Download source code from repository with.
+
+    git clone https://github.com/luixaviles/angular-e2e-examples.git
+    
+Install dependences with.
+
+    npm install
+    
+Download web-drivers with.
+
+    npm run update-webdriver
+    
+Run End to End (e2e) tests with.
+
+    grunt protractor
+
+    
+    
