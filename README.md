@@ -24,6 +24,10 @@ Download source code from repository with.
 
     git clone https://github.com/luixaviles/angular-e2e-examples.git
     
+Change directory to angular-e2e-examples project with.
+
+    cd angular-e2e-examples
+
 Install dependences with.
 
     npm install
@@ -32,9 +36,6 @@ Download web-drivers with.
 
     npm run update-webdriver
     
-Run End to End (e2e) tests with.
+Run End-to-End (e2e) tests with.
 
     grunt protractor
-
-    
-    
