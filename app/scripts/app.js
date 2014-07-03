@@ -14,7 +14,7 @@ angular.module('angularE2EExamples', [
         controller: 'MainCtrl'
       })
       .when('/customers', {
-        templateUrl: 'partials/grid/customers',
+        templateUrl: 'partials/customers/customers',
         controller: 'GridCustomersController'
       })
       .otherwise({

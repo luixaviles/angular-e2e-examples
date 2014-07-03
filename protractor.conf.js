@@ -1,6 +1,7 @@
 exports.config = {
   suites: {
-    'all': 'test/e2e/**/*_spec.js'
+//    'all': 'test/e2e/**/*_spec.js',
+    'customers': 'test/e2e/customers/**/*_spec.js'
   },
 
   multiCapabilities: [
